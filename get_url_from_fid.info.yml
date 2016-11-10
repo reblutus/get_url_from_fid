@@ -1,0 +1,5 @@
+name: Get Url From Fid
+type: module
+description: 'Module that extends twig by adding a function to load an url from a file id (fid)'
+package: Stingray
+core: 8.x

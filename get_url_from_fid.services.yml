@@ -1,0 +1,5 @@
+services:
+  get_url_from_fid.twig.GetUrlFromFid:
+    class: Drupal\get_url_from_fid\GetUrlFromFid
+    tags:
+      - { name: twig.extension }

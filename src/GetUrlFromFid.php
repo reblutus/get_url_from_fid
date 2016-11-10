@@ -25,7 +25,11 @@ class GetUrlFromFid extends \Twig_Extension{
 
   public function get_url_from_fid($fid){
     $file = \Drupal\file\Entity\File::load($fid);
-    $uri = $file->getFileUri();
-    return file_create_url($uri);
+    if(!is_null($file)){
+      $uri = $file->getFileUri();
+      return file_create_url($uri);
+    }else{
+      return false;
+    }
   }
 }
